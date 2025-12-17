@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Z-Library 镜像注册全流程：邮箱验证和绑定，新手零踩坑指南 - Z-Library镜像图书馆</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 基础样式 */
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #F5F5F5;
+            color: #000000;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* 容器 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 顶部导航栏 */
+        .top-nav {
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .nav-btn {
+            padding: 8px 16px;
+            background-color: #F0F0F0;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .nav-btn:hover,
+        .nav-btn:active {
+            background-color: #E0E0E0;
+        }
+
+        /* 文章内容 */
+        .article-content {
+            background-color: #FFFFFF;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .article-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .article-text {
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .article-text h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+
+        .article-text .step-title {
+            font-weight: bold;
+            color: #000000;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        .article-text .step-content {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .top-nav {
+                padding: 15px;
+            }
+
+            .nav-btn {
+                padding: 6px 12px;
+                font-size: 13px;
+            }
+
+            .article-content {
+                padding: 15px;
+                margin: 0 5px 30px;
+            }
+
+            .article-title {
+                font-size: 24px;
+                margin-bottom: 16px;
+            }
+
+            .article-text {
+                font-size: 15px;
+                line-height: 1.7;
+                margin-bottom: 14px;
+            }
+
+            .article-text h3 {
+                font-size: 18px;
+                margin-top: 20px;
+                margin-bottom: 14px;
+            }
+
+            .article-text .step-content {
+                margin-left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <a href="../index.html" class="nav-btn">返回首页</a>
+        <a href="../help.html" class="nav-btn">返回帮助中心</a>
+    </div>
+
+    <div class="container">
+        <div class="article-content">
+            <h1 class="article-title">Z-Library 镜像注册全流程：邮箱验证和绑定，新手零踩坑指南</h1>
+            <div class="article-text">
+                <p>先跟新手朋友把基础说透：Zlib的镜像网站就像官方的“备份分身”，资源和核心功能都一样，只是访问域名不同，注册后能解锁更多下载额度。但现在高仿钓鱼网站特别多，像zlibrary.to、z-lib.is这些看着像官方的域名，其实可能是骗信息的坑，所以注册前先辨真假，比啥都重要。</p>
+                
+                <h3>3秒筛掉钓鱼网站（注册前必做）</h3>
+                <div class="step-content">
+                    <p>靠谱的镜像域名里会有“z-lib”“zlibrary”核心词，没有乱七八糟的数字或特殊符号，页面干净没强制弹窗。之前有朋友碰到“zlib-vip123.com”，一进去就让交20元注册费，这种直接关掉，真镜像注册全免费。</p>
+                </div>
+                
+                <h3>注册+邮箱验证全流程</h3>
+                <div class="step-title">第一步：填写注册信息</div>
+                <div class="step-content">
+                    <p>打开靠谱的镜像网站，找右上角的“Register”（注册）按钮，点进去后只填邮箱和密码。邮箱别用临时邮箱，不然收不到验证邮件；密码得是字母+数字组合，别用生日、手机号，也别和微信、支付宝密码一样，之前有用户因为密码重复被盗号，这点要记牢。</p>
+                </div>
+                
+                <div class="step-title">第二步：查收验证邮件</div>
+                <div class="step-content">
+                    <p>提交后立刻去邮箱查验证邮件，大概率在垃圾邮件文件夹里，别漏看了。点邮件里的验证链接，跳回镜像页面就激活成功了。如果没收到，先检查邮箱填没填错，再点网站上的“重新发送验证邮件”，还是收不到就换个镜像，有时候是服务器延迟。</p>
+                </div>
+                
+                <div class="step-title">第三步：完善基础信息</div>
+                <div class="step-content">
+                    <p>验证完登录账号，完善信息只填昵称就行，身份证、银行卡这些敏感信息一概不填，真镜像根本不会要这些。</p>
+                </div>
+                
+                <h3>邮箱绑定补充说明（新手必看）</h3>
+                <div class="step-content">
+                    <p>注册时用的邮箱就是默认绑定的，后续可以在账号设置里添加备用邮箱，防止主邮箱收不到通知。添加方法很简单，找到“邮箱管理”，输入备用邮箱，再验证一遍就行。绑定后要注意，别用公共WiFi登录账号，咖啡馆、商场的WiFi不安全，容易泄露密码，用家里的WiFi或手机流量最稳妥。</p>
+                </div>
+                
+                <h3>高频坑点与解决办法</h3>
+                <div class="step-title">坑点1：要求交保证金/充值会员注册</div>
+                <div class="step-content">
+                    <p>遇到让交保证金、充值会员才能注册的，直接退出，100%是钓鱼网站；</p>
+                </div>
+                
+                <div class="step-title">坑点2：登录失败</div>
+                <div class="step-content">
+                    <p>先清浏览器缓存（点右上角三个点，找“清除浏览数据”），再检查域名是不是失效了，镜像域名可能会换，换个最新的镜像再登录；</p>
+                </div>
+                
+                <div class="step-title">坑点3：验证邮件收不到</div>
+                <div class="step-content">
+                    <p>试试换个邮箱注册，比如QQ邮箱收不到就换163邮箱，很多时候是邮箱拦截了验证邮件。</p>
+                </div>
+                
+                <h3>总结</h3>
+                <div class="step-content">
+                    <p>注册Zlib镜像，先辨真假镜像（看域名、查风险），再填邮箱密码，验证邮件别漏看垃圾邮件，全程不填敏感信息、不花钱。按这个流程来，新手也能零踩坑，注册后就能安心用镜像找资源啦。如果找不到靠谱的镜像地址，也可以试试下载Zlib客户端，比镜像更稳定安全。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

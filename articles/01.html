@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Z-library 网站安全访问指南 - Z-Library镜像图书馆</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 基础样式 */
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #F5F5F5;
+            color: #000000;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* 容器 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 顶部导航栏 */
+        .top-nav {
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .nav-btn {
+            padding: 8px 16px;
+            background-color: #F0F0F0;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .nav-btn:hover,
+        .nav-btn:active {
+            background-color: #E0E0E0;
+        }
+
+        /* 文章内容 */
+        .article-content {
+            background-color: #FFFFFF;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .article-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .article-text {
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .article-text h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+
+        .article-text .question {
+            font-weight: bold;
+            color: #000000;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        .article-text .answer {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .top-nav {
+                padding: 15px;
+            }
+
+            .nav-btn {
+                padding: 6px 12px;
+                font-size: 13px;
+            }
+
+            .article-content {
+                padding: 15px;
+                margin: 0 5px 30px;
+            }
+
+            .article-title {
+                font-size: 24px;
+                margin-bottom: 16px;
+            }
+
+            .article-text {
+                font-size: 15px;
+                line-height: 1.7;
+                margin-bottom: 14px;
+            }
+
+            .article-text h3 {
+                font-size: 18px;
+                margin-top: 20px;
+                margin-bottom: 14px;
+            }
+
+            .article-text .answer {
+                margin-left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <a href="../index.html" class="nav-btn">返回首页</a>
+        <a href="../help.html" class="nav-btn">返回帮助中心</a>
+    </div>
+
+    <div class="container">
+        <div class="article-content">
+            <h1 class="article-title">Z-library 网站安全访问指南：如何辨别钓鱼网站，避免个人信息泄露</h1>
+            <div class="article-text">
+                <p>先跟大家说清楚核心逻辑：Zlib因为版权问题，官方域名经常变动，镜像网站就像它的“备份分身”，资源和功能差不多，但得找对靠谱的才安全。钓鱼网站就是冒充这些镜像，骗你填账号密码、收你钱，最后偷你信息。下面分享一套亲测好用的辨别+安全访问方法，新手也能看懂。</p>
+                
+                <h3>三步辨别钓鱼网站</h3>
+                <div class="question">第一步：看域名</div>
+                <div class="answer">
+                    <p>靠谱的镜像域名一般简单好记，大多包含“z-lib”“zlibrary”这些核心词，不会有乱七八糟的数字、特殊符号，比如“z-lib.org”这种就比较正规。如果遇到“zlib1234.com”“z-library-xxx.vip”这种，看着就花哨的，直接关掉，大概率是钓鱼。</p>
+                </div>
+                
+                <div class="question">第二步：看页面</div>
+                <div class="answer">
+                    <p>真镜像的页面很简洁，主要就是搜索框、分类栏，没有弹窗广告、没有“充值会员解锁下载”的强制提示。之前有人遇到一打开就弹“您的账号有风险，需充值20元解锁”的，这种百分百是骗钱的，别搭理。</p>
+                </div>
+                
+                
+                
+                <h3>安全访问实操技巧</h3>
+                <div class="answer">
+                    <ul>
+                        <li>访问时别用公共WiFi，比如咖啡馆、商场的，这些网络不安全，容易被偷账号密码，用自己的手机流量或者家里的WiFi最稳妥。</li>
+                        <li>登录账号时，只填必要的信息，别轻易给身份证号、银行卡号。真的Zlib镜像要么不用登录就能下，要么只需要邮箱注册，遇到要填这些敏感信息的，直接退出。</li>
+                        <li>下载的时候如果遇到“需要交保证金”“必须买会员才能下”，全是骗局。靠谱的镜像要么免费，要么只收少量自愿捐赠的费用，而且不会强制。之前有朋友被“交50元终身免费下载”骗了，大家千万别踩这个坑。</li>
+                    </ul>
+                </div>
+                
+                <h3>高频问题解决办法</h3>
+                <div class="question">苹果手机登不上怎么办？</div>
+                <div class="answer">
+                    <p>试试换个浏览器，比如用Safari，然后在设置里把“阻止跨网站跟踪”关掉，很多时候是这个设置挡着了。</p>
+                </div>
+                
+                <div class="question">下载不了怎么办？</div>
+                <div class="answer">
+                    <p>别着急点“加速下载”“高速通道”，这些大概率是广告链接，换个镜像试试，或者等一会儿再下，有时候是镜像服务器负载太高。</p>
+                </div>
+                
+                <h3>总结</h3>
+                <div class="answer">
+                    <p>访问Zlib镜像，先看域名简不简单，再看页面干不干净，不确定就用反诈APP查一查。登录只用私人网络，不填敏感信息，遇到收费、要保证金的直接跑。按这些方法来，既能找到想要的资源，又能保护好个人信息，放心用。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

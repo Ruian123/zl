@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>常见问题解答 - Z-Library镜像图书馆</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 基础样式 */
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #F5F5F5;
+            color: #000000;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* 容器 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 顶部导航栏 */
+        .top-nav {
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .nav-btn {
+            padding: 8px 16px;
+            background-color: #F0F0F0;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .nav-btn:hover,
+        .nav-btn:active {
+            background-color: #E0E0E0;
+        }
+
+        /* 文章内容 */
+        .article-content {
+            background-color: #FFFFFF;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .article-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .article-text {
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .article-text h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+
+        .article-text .question {
+            font-weight: bold;
+            color: #000000;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        .article-text .answer {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .top-nav {
+                padding: 15px;
+            }
+
+            .nav-btn {
+                padding: 6px 12px;
+                font-size: 13px;
+            }
+
+            .article-content {
+                padding: 15px;
+                margin: 0 5px 30px;
+            }
+
+            .article-title {
+                font-size: 24px;
+                margin-bottom: 16px;
+            }
+
+            .article-text {
+                font-size: 15px;
+                line-height: 1.7;
+                margin-bottom: 14px;
+            }
+
+            .article-text h3 {
+                font-size: 18px;
+                margin-top: 20px;
+                margin-bottom: 14px;
+            }
+
+            .article-text .answer {
+                margin-left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <a href="../index.html" class="nav-btn">返回首页</a>
+        <a href="../help.html" class="nav-btn">返回帮助中心</a>
+    </div>
+
+    <div class="container">
+        <div class="article-content">
+            <h1 class="article-title">常见问题解答</h1>
+            <div class="article-text">
+                <p>在使用Z-Library的过程中，你可能会遇到一些常见问题。本文收集了用户最常问的问题及其解答，希望能帮助你顺利使用我们的服务。</p>
+                
+                <h3>下载问题</h3>
+                <div class="question">1. 下载按钮点击后没有反应怎么办？</div>
+                <div class="answer">
+                    <p>可能的原因及解决方法：</p>
+                    <ul>
+                        <li>检查网络连接是否正常</li>
+                        <li>清除浏览器缓存和Cookie后重试</li>
+                        <li>尝试使用其他浏览器或设备</li>
+                        <li>如果使用了广告拦截器，请暂时关闭后重试</li>
+                        <li>尝试使用其他Z-Library镜像站点</li>
+                    </ul>
+                </div>
+                
+                <div class="question">2. 下载速度很慢怎么办？</div>
+                <div class="answer">
+                    <p>Z-Library的下载速度可能受到多种因素影响：</p>
+                    <ul>
+                        <li>选择离你地理位置更近的镜像站点</li>
+                        <li>避开网络高峰期下载</li>
+                        <li>确保你的网络连接稳定</li>
+                        <li>尝试使用下载工具（如IDM）进行下载</li>
+                    </ul>
+                </div>
+                
+                <h3>账号问题</h3>
+                <div class="question">3. 注册Z-Library账号需要付费吗？</div>
+                <div class="answer">
+                    <p>不需要，Z-Library的基本账号注册是免费的。免费账号每天有一定的下载限额。如果你需要更多的下载次数，可以考虑升级为高级会员。</p>
+                </div>
+                
+                <div class="question">4. 忘记密码了怎么办？</div>
+                <div class="answer">
+                    <p>在登录页面点击"忘记密码"链接，输入你注册时使用的邮箱地址，系统会发送重置密码的链接到你的邮箱。请检查你的邮箱（包括垃圾邮件文件夹）来重置密码。</p>
+                </div>
+                
+                <h3>书籍问题</h3>
+                <div class="question">5. 找不到我需要的书籍怎么办？</div>
+                <div class="answer">
+                    <p>如果你在Z-Library上找不到需要的书籍，可以尝试：</p>
+                    <ul>
+                        <li>使用不同的关键词搜索（如作者名、ISBN、出版社等）</li>
+                        <li>检查拼写是否正确</li>
+                        <li>尝试使用高级搜索功能缩小范围</li>
+                        <li>如果书籍是新书，可能还没有被收录到Z-Library中</li>
+                    </ul>
+                </div>
+                
+                <div class="question">6. 下载的书籍格式不兼容我的阅读器怎么办？</div>
+                <div class="answer">
+                    <p>Z-Library提供多种格式的书籍下载，包括PDF、EPUB、MOBI、TXT等。如果下载的格式不兼容，你可以：</p>
+                    <ul>
+                        <li>尝试下载其他格式的同一本书</li>
+                        <li>使用在线转换工具将书籍转换为兼容的格式</li>
+                        <li>安装支持多种格式的阅读软件</li>
+                    </ul>
+                </div>
+                
+                <h3>其他问题</h3>
+                <div class="question">7. Z-Library是合法的吗？</div>
+                <div class="answer">
+                    <p>Z-Library的合法性在不同国家和地区可能有所不同。我们建议你了解并遵守当地的版权法律，仅下载和使用你有权访问的内容。</p>
+                </div>
+                
+                <div class="question">8. 如何向Z-Library提交书籍？</div>
+                <div class="answer">
+                    <p>Z-Library接受用户提交的书籍，但需要遵守一定的规定。你需要注册并登录账号，然后在"上传"页面按照指示提交书籍。提交的书籍需要经过审核后才会被收录。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
