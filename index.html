@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Z-Library镜像图书馆</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 基础样式 */
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #F5F5F5;
+            color: #000000;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* 容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 标题区 */
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+            margin: 0;
+        }
+
+        /* 帮助中心按钮 */
+        .help-btn {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 8px 16px;
+            background-color: #F0F0F0;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .help-btn:hover,
+        .help-btn:active {
+            background-color: #E0E0E0;
+        }
+
+        /* 更多离线资源按钮 */
+        .more-btn-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .more-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #0066FF;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            min-width: 200px;
+            text-align: center;
+            transition: background-color 0.2s ease;
+        }
+
+        .more-btn:hover,
+        .more-btn:active {
+            background-color: #0044CC;
+        }
+
+        /* 核心按钮区 */
+        .core-buttons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .core-btn {
+            display: block;
+            padding: 12px 24px;
+            background-color: #FFFFFF;
+            color: #000000;
+            text-decoration: none;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 16px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .core-btn:hover,
+        .core-btn:active {
+            background-color: #F0F0F0;
+        }
+
+        /* 介绍板块样式 */
+        .intro-sections {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .intro-section {
+            background-color: #FFFFFF;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        .intro-section h2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .intro-section p {
+            font-size: 16px;
+            color: #666666;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .intro-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 18px;
+            }
+
+            .help-btn {
+                padding: 6px 12px;
+                font-size: 13px;
+                right: 15px;
+            }
+
+            .core-buttons {
+                grid-template-columns: 1fr;
+                gap: 10px;
+                padding: 0 5px;
+            }
+
+            .core-btn {
+                padding: 18px 0;
+                font-size: 17px;
+                min-height: 55px;
+            }
+
+            .more-btn {
+                padding: 15px 30px;
+                font-size: 18px;
+            }
+
+            .intro-sections {
+                gap: 15px;
+                padding: 0 5px;
+            }
+
+            .intro-section {
+                padding: 10px;
+            }
+
+            .intro-section h2 {
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+
+            .intro-section p {
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Z-Library镜像图书馆</h1>
+        <a href="help.html" class="help-btn">帮助中心</a>
+    </header>
+
+    <div class="container">
+        <div class="more-btn-container">
+            <a href="all-resources.html" class="more-btn">更多离线资源</a>
+        </div>
+
+        <div class="core-buttons">
+            <a href="https://zh.fin101.ru/" target="_blank" class="core-btn">ZLibrary 镜像入口 1</a>
+            <a href="https://zh.fin101.ru/" target="_blank" class="core-btn">ZLibrary 镜像入口 2</a>
+            <a href="https://zh.fin101.ru/" target="_blank" class="core-btn">ZLibrary 镜像入口 3</a>
+            <a href="https://zh.z-library.sk/" target="_blank" class="core-btn">ZLibrary 官方网址 1</a>
+            <a href="https://zh.z-lib.gd/" target="_blank" class="core-btn">ZLibrary 官方网址 2</a>
+            <a href="https://z-lib.fm/" target="_blank" class="core-btn">ZLibrary 官方网址 3</a>
+        </div>
+
+        <!-- 介绍板块 -->
+        <div class="intro-sections">
+            <!-- Z-library 图书馆介绍 -->
+            <div class="intro-section">
+                <h2>Z-library 图书馆介绍</h2>
+                <p>zlibrary 是世界上最大的电子图书馆，拥有超过 23,000,000 的书籍和 84,837,000 的学术文章，涵盖知名文学著作，小说，理工学科，人文艺术，以及学术论文等应有尽有！支持 pdf、epub、mobi，txt 等多种格式资源下载。自 2009 年以来，我们提供不同语言自由阅读独特的书籍和科学文章。我们的目标是让每个人都能获得文学作品。</p>
+                <p>zlibrary 原是创世纪图书馆（Library Genesis）的镜像网站，并从该图书馆获得大部分馆藏，但它的一些馆藏由用户自行上传，并且不为创世纪图书馆所收藏。该平台公开网域曾于 2022 年 11 月 3 日遭到美国政府屏蔽。2023 年 2 月 11 日，用户可以再次访问 Z-Library。</p>
+            </div>
+
+            <!-- Z-library 功能介绍 -->
+            <div class="intro-section">
+                <h2>Z-library 功能介绍</h2>
+                <p>强大的搜索功能：zlibrary 提供了极为强大的搜索系统，支持按标题、作者、ISBN、主题等多种方式搜索，还能通过高级筛选器按精准、语言、文件格式等条件进行搜索查找。全文搜索功能更是能直接定位到书籍或文章中的具体段落，极大地提高了用户查找资源的效率。</p>
+                <p>丰富的资源库：zlibrary 拥有超过 2300 万本电子书和 8400 万篇学术文章，涵盖几乎所有学科领域。从经典文学作品到前沿科技论文，从儿童绘本到专业学术著作，用户可以在这里找到几乎任何类型的阅读资源。此外，平台还支持用户上传资源，进一步丰富了资源库的内容。</p>
+                <p>多语言与多格式支持：zlibrary 支持近 30 种语言的资源，满足了全球不同地区用户的需求。同时，它提供 PDF、EPUB、MOBI、TXT 等多种电子书格式下载，用户可以根据自己的阅读设备选择合适的格式，确保阅读体验的舒适性。</p>
+            </div>
+
+            <!-- Z-library 使用步骤 -->
+            <div class="intro-section">
+                <h2>Z-library 使用步骤</h2>
+                <p>访问与注册：首先，通过官方推荐的镜像站点或 Telegram 频道获取 zlibrary 的最新访问链接。进入网站后，点击首页右上角的 “登录” 按钮，可以选择使用邮箱或社交媒体账号进行注册。注册后，用户可以享受更多功能，如同步阅读进度、创建个人书单等。</p>
+                <p>搜索与筛选：在 zlibrary 的首页搜索栏中输入关键词，例如书名、作者或主题，点击搜索按钮即可开始查找资源。搜索结果页面会列出与关键词相关的书籍和文章，用户可以通过左侧的筛选器进一步缩小搜索范围，按语言、格式、年份等条件进行筛选，快速找到符合自己需求的资源。</p>
+                <p>下载资源：找到心仪的书籍或文章后，点击资源标题进入详情页面。在详情页面中，用户可以选择不同的文件格式进行下载，如 PDF、EPUB、MOBI、TXT 等。点击下载按钮后，资源会自动保存到用户的设备中。如果是注册用户，还可以将资源添加到个人书单中，方便后续管理和阅读。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

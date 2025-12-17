@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>全能资源库</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 基础样式 */
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #F5F5F5;
+            color: #000000;
+            -webkit-tap-highlight-color: transparent;
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+
+        /* 顶部导航栏 */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: env(safe-area-inset-top) 20px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .nav-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .back-btn {
+            padding: 8px 16px;
+            background-color: #F0F0F0;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .back-btn:hover,
+        .back-btn:active {
+            background-color: #E0E0E0;
+        }
+
+        /* 资源按钮容器 */
+        .resources-container {
+            margin-top: 80px;
+            padding: 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* 资源按钮样式 */
+        .resource-btn {
+            display: block;
+            padding: 15px;
+            background-color: #FFFFFF;
+            color: #000000;
+            text-decoration: none;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .resource-btn:hover,
+        .resource-btn:active {
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .resource-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #000000;
+        }
+
+        .resource-desc {
+            font-size: 13px;
+            color: #666666;
+            line-height: 1.4;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .top-nav {
+                padding: env(safe-area-inset-top) 15px 12px;
+            }
+
+            .nav-title {
+                font-size: 19px;
+            }
+
+            .back-btn {
+                padding: 10px 20px;
+                font-size: 15px;
+                min-width: 85px;
+            }
+
+            .resources-container {
+                margin-top: 70px;
+                padding: 10px 5px;
+            }
+
+            .resource-btn {
+                padding: 18px;
+                margin-bottom: 8px;
+            }
+
+            .resource-title {
+                font-size: 17px;
+            }
+
+            .resource-desc {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <h1 class="nav-title">全能资源库</h1>
+        <a href="index.html" class="back-btn">返回首页</a>
+    </nav>
+
+    <div class="resources-container">
+        <a href="https://docs.qq.com/sheet/DSkJNZ25Ua2hFc1Bo" target="_blank" class="resource-btn">
+            <div class="resource-title">ZLibrary 客户端及离线电子书库</div>
+            <div class="resource-desc">下载客户端 + 获取离线电子书库</div>
+        </a>
+
+        <a href="https://docs.qq.com/sheet/DSk1UUHRXdk9CYXNa" target="_blank" class="resource-btn">
+            <div class="resource-title">热门电影合辑</div>
+            <div class="resource-desc">汇总各类热门电影资源</div>
+        </a>
+
+        <a href="https://docs.qq.com/sheet/DSmpQWVNVQ2RGeUFO" target="_blank" class="resource-btn">
+            <div class="resource-title">电视剧美剧合辑</div>
+            <div class="resource-desc">美剧 / 国产剧资源合集</div>
+        </a>
+
+        <a href="https://docs.qq.com/sheet/DSmJqbFNxRFRFdGFO" target="_blank" class="resource-btn">
+            <div class="resource-title">纪录片合辑</div>
+            <div class="resource-desc">高分纪录片资源汇总</div>
+        </a>
+
+        <a href="https://docs.qq.com/sheet/DSnVXbHpxR2xpaXdG" target="_blank" class="resource-btn">
+            <div class="resource-title">动漫动画漫画合辑</div>
+            <div class="resource-desc">动漫 / 漫画 / 动画资源合集</div>
+        </a>
+
+        <a href="https://docs.qq.com/sheet/DSmxTUUFCRkdLdnhi" target="_blank" class="resource-btn">
+            <div class="resource-title">短剧合辑</div>
+            <div class="resource-desc">热门短剧资源汇总</div>
+        </a>
+
+        <a href="https://docs.qq.com/sheet/DSnVkb2dFRERMT3BL" target="_blank" class="resource-btn">
+            <div class="resource-title">影视动漫小说 App</div>
+            <div class="resource-desc">移动端资源类 App 合集</div>
+        </a>
+
+        <a href="https://docs.qq.com/sheet/DSnVCYXVoUER1dVpr" target="_blank" class="resource-btn">
+            <div class="resource-title">PC 单机游戏合辑</div>
+            <div class="resource-desc">电脑单机游戏资源汇总</div>
+        </a>
+
+        <a href="https://docs.qq.com/sheet/DSmVET1hrdEJYZ0Ni" target="_blank" class="resource-btn">
+            <div class="resource-title">电脑手机软件合辑</div>
+            <div class="resource-desc">多设备工具软件合集</div>
+        </a>
+
+        <a href="https://docs.qq.com/sheet/DSmNCYmJQaEhFTFZz" target="_blank" class="resource-btn">
+            <div class="resource-title">编程开发教程合辑</div>
+            <div class="resource-desc">编程学习教程 / 实战案例汇总</div>
+        </a>
+
+        <a href="https://docs.qq.com/sheet/DSmJkRUh5cFdHWnZC" target="_blank" class="resource-btn">
+            <div class="resource-title">搞钱副业合辑</div>
+            <div class="resource-desc">副业思路 / 赚钱资源汇总</div>
+        </a>
+
+        <a href="https://docs.qq.com/sheet/DSk1ubmtwb1hjZnB5" target="_blank" class="resource-btn">
+            <div class="resource-title">瑜伽舞蹈 Asmr 助眠</div>
+            <div class="resource-desc">运动 / 助眠类音频视频资源</div>
+        </a>
+
+        <a href="https://docs.qq.com/sheet/DSk9acGNNbFRJUWtU" target="_blank" class="resource-btn">
+            <div class="resource-title">音乐合辑</div>
+            <div class="resource-desc">各类音乐资源合集</div>
+        </a>
+    </div>
+</body>
+</html>
